@@ -1,0 +1,79 @@
+.portfolio__screenshots {
+  height: 920px;
+  background-color: #ffffff;
+}
+
+.portfolio__text {
+  @include span(8 of 12);
+  margin-left: span(2 of 12);
+  padding-top: 115px;
+  text-align: center;
+}
+
+.portfolio__header {
+  @extend .common__h2;
+  margin-bottom: 45px;
+}
+
+.portfolio__paragraph {
+  @extend .common__text;
+  margin-bottom: 53px;
+}
+
+.portfolio__redline {
+  display: block;
+  height: 5px;
+  width: 65px;
+  background-color: #e64a19;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+.portfolio__works {
+  @extend .common__text;
+  margin-left: span(2 of 12);
+  li {
+    float: left;
+    margin-left: 20px;
+    &:first-child {
+      margin-left: 120px;
+    }
+    a {
+      @extend .common__link;
+      font-size: 16px;
+      text-transform: none;
+      font-weight: 300;
+    }
+  }
+}
+
+
+.portfolio__slider--list {
+  padding-top: 55px;
+  .slick-dots {
+    @include span(2 of 12);
+    margin-left: span(5 of 12);
+    bottom: -75px;
+
+    li button:before {
+      font-size: 9px;
+    }
+
+    li.slick-active button:before {
+      color: #e3643b;
+    }
+  }
+  li {
+    float: left;
+    overflow: hidden;
+  }
+}
+
+//==================================================================================
+// slider
+//==================================================================================
+
+//==================================================================================
+// End of slider
+//==================================================================================
+

@@ -1,0 +1,169 @@
+@import "compass/css3/user-interface";
+
+.footer {
+  padding-top: 75px;
+  background-color: #212121;
+  padding-bottom: 40px;
+}
+
+.main__footer__div {
+  @include span(12 of 12);
+  border-bottom: 1px solid #474747;
+  padding-bottom: 5px;
+  margin-bottom: 35px;
+}
+
+.footer__form {
+  @include span(5 of 12);
+  text-align: left;
+}
+
+.footer__logo {
+  @extend .common__link;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 35px;
+}
+
+.footer__links {
+  @include span(5 of 12 last);
+  margin-left: span(1 of 12);
+}
+
+.footer__form__text {
+  @extend .footer__text;
+  margin-bottom: 34px;
+  text-align: justify;
+}
+
+// placeholders
+.footer__email__inp,
+.footer__subj__inp,
+.footer__msg__inp {
+  @include input-placeholder {
+    text-transform: uppercase;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &:focus {
+    outline: none;
+  }
+  color: #999999;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #474747;
+  padding-bottom: 5px;
+}
+
+.footer__email__inp {
+  @include span(6 of 12);
+  margin-right: span(1 of 12);
+  margin-bottom: 30px;
+}
+
+.footer__subj__inp {
+  @include span(5 of 12 last);
+}
+
+.footer__msg__inp {
+  @include span(12 of 12);
+  margin-bottom: 90px;
+}
+
+//==================================================================================
+// links
+//==================================================================================
+
+.links {
+  @extend .footer__ul__header;
+}
+
+.links__block {
+  @include span(3 of 12);
+  &:not(:first-child) {
+    margin-left: span(1.5 of 12);
+  }
+  li {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  a {
+    @extend .footer__text;
+    text-decoration: none;
+  }
+}
+
+//==================================================================================
+// End of links
+//==================================================================================
+
+//==================================================================================
+// send button
+//==================================================================================
+.send {
+  @include span(12 of 12);
+}
+
+.footer__send__button {
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #999999;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    color: lighten(#999999, 15%);
+  }
+}
+
+.footer__send__triangle {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+//==================================================================================
+// End of send button
+//==================================================================================
+
+//==================================================================================
+// copyrights
+//==================================================================================
+
+.copyrights__text {
+  @include span(5 of 12);
+  @extend .footer__text;
+}
+
+.privacy__terms {
+  @include span(4 of 12 last);
+  a {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: $mainFont;
+    color: #aaaaaa;
+    text-decoration: none;
+  }
+  li {
+    float: right;
+    &:not(:last-child) {
+      margin-left: 27px;
+    }
+  }
+}
+
+//==================================================================================
+// End of copyrights
+//==================================================================================
+

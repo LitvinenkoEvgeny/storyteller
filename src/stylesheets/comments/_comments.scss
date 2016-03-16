@@ -1,0 +1,78 @@
+.reviews {
+  padding: 74px 0;
+  background-color: #efefef;
+}
+
+.comment {
+  padding-top: 80px;
+  padding-bottom: 90px;
+  background-color: #ffffff;
+}
+
+.reviews__list {
+  @include span(12 of 12 last);
+  font-family: $mainFont;
+  position: relative;
+  li {
+    width: span(3 of 12);
+    padding: 25px 0;
+    border-left: 3px solid #000000;
+    &:last-child {
+      width: span(3 of 12);
+    }
+  }
+}
+
+.review {
+  margin-left: 20px;
+}
+
+.reviews__next {
+  position: absolute;
+  z-index: 2;
+  right: 20px;
+  top: 40px;
+  cursor: pointer;
+}
+
+.review__header {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.review__date {
+  @extend .common__date;
+}
+
+.comment__box {
+  @include span(10 of 12);
+  padding: 0 span(1.5 of 12);
+  text-align: center;
+  font-family: $mainFont;
+}
+
+.fa-twitter {
+  font-size: 30px;
+  margin-bottom: 57px;
+}
+
+.comment__author {
+  display: block;
+  background-image: url("../../images/sprites.png");
+  margin: 0 auto;
+  margin-bottom: 48px;
+  width: 62px;
+  height: 62px;
+  background-position: -750px 0
+}
+
+.comment__text {
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.comment__author__mail {
+  font-size: 16px;
+  font-weight: bold;
+}
