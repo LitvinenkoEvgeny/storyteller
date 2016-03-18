@@ -216,7 +216,7 @@ body {
 
 .broccoly {
   display: inline-block;
-  background-image: url("../../images/sprites.png");
+  background-image: url("../images/sprites.png");
   width: 45px;
   height: 45px;
   background-position: 4px 2px;
@@ -254,7 +254,7 @@ body {
 }
 
 .feature__icon {
-  background-image: url("../../images/sprites.png");
+  background-image: url("../images/sprites.png");
   height: 45px;
   width: 45px;
   display: inline-block;
@@ -393,7 +393,7 @@ body {
   display: inline-block;
   width: 70px;
   height: 60px;
-  background-image: url("../../images/sprites.png");
+  background-image: url("../images/sprites.png");
   float: left;
 }
 .author__icon--jimmy {
@@ -450,7 +450,7 @@ body {
   width: 15.25424%;
   display: inline-block;
   height: 150px;
-  background-image: url("../../images/sprites.png");
+  background-image: url("../images/sprites.png");
 }
 .client__logo:last-child {
   width: 15.25424%;
@@ -639,7 +639,7 @@ body {
   margin: 0 auto;
   width: 140px;
   height: 140px;
-  background-image: url("../../images/sprites.png");
+  background-image: url("../images/sprites.png");
   outline: none;
 }
 .team__member__img.james {
@@ -870,7 +870,7 @@ body {
 
 .comment__author {
   display: block;
-  background-image: url("../../images/sprites.png");
+  background-image: url("../images/sprites.png");
   margin: 0 auto;
   margin-bottom: 48px;
   width: 62px;
